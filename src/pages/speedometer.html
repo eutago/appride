@@ -9,17 +9,32 @@
             integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
             crossorigin="anonymous"
         />
+        <link rel="stylesheet" href="../css/index.css" />
         <title>Ride</title>
     </head>
     <body>
-        <div>
-            <a href="../../index.html">X</a>
-            <div>
-                <span id="speed">0</span>
-                <span>Km/h</span>
+        <div class="container d-flex flex-column justify-content-between h-100">
+            <nav class="navbar justify-content-between">
+                <h1>Ride</h1>
+                <a
+                    class="btn btn-close border border-dark p-2"
+                    href="../../index.html"
+                ></a>
+            </nav>
+            <div
+                class="d-flex flex-column justify-content-center align-items-center bg-dark text-light rounded-3 flex-fill mb-3"
+            >
+                <span class="fw-bold" style="font-size: 120px" id="speed"
+                    >14</span
+                >
+                <span style="font-size: 36px">Km/h</span>
             </div>
-            <button class="btn btn-primary" id="start">Start</button>
-            <button class="btn btn-danger" id="stop">Stop</button>
+            <button class="btn btn-primary mb-3" id="start">
+                <span class="display-3 fw-semibold">Start</span>
+            </button>
+            <button class="btn btn-danger mb-3 d-none" id="stop">
+                <span class="display-3 fw-semibold">Stop</span>
+            </button>
         </div>
     </body>
 </html>
