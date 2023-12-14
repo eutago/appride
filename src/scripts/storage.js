@@ -10,6 +10,10 @@ const createNewRide = () => {
     return rideId;
 };
 
+const getAllRides = () => {
+    return Object.entries(localStorage);
+};
+
 const getRideRecord = (rideId) => {
     return JSON.parse(localStorage.getItem(rideId));
 };
