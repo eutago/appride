@@ -11,6 +11,10 @@ allRides.forEach(async ([id, value]) => {
 
     rideListElement.appendChild(itemElement);
 
+    itemElement.addEventListener("click", () => {
+        window.location.href = `./src/pages/details.html?id=${ride.id}`;
+    });
+
     const firstPosition = ride.data[0];
     const firstLocationData = await getLocationData(
         firstPosition.latitude,
